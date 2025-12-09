@@ -1,6 +1,6 @@
-package com.system.batch.config;
+package com.system.batch.chapter01.config;
 
-import com.system.batch.listener.InfiltrationPlanListener;
+import com.system.batch.chapter01.listener.InfiltrationPlanListener;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.Job;

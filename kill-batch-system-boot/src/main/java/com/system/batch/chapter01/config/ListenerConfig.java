@@ -1,7 +1,7 @@
-package com.system.batch.config;
+package com.system.batch.chapter01.config;
 
-import com.system.batch.listener.BigBrotherJobExecutionListener;
-import com.system.batch.listener.ServerRackControlListener;
+import com.system.batch.chapter01.listener.BigBrotherJobExecutionListener;
+import com.system.batch.chapter01.listener.ServerRackControlListener;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.Job;

@@ -1,6 +1,6 @@
-package com.system.batch.config;
+package com.system.batch.chapter01.config;
 
-import com.system.batch.validator.SystemDestructionValidator;
+import com.system.batch.chapter01.validator.SystemDestructionValidator;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
