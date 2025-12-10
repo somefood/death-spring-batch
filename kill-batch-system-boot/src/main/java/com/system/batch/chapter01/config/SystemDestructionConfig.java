@@ -19,16 +19,16 @@ import org.springframework.transaction.PlatformTransactionManager;
 @Configuration
 public class SystemDestructionConfig {
     @Bean
-    public Job killDashNineJob(JobRepository jobRepository, Step terminationStep) {
+    public Job killDashNineJob(JobRepository jobRepository, Step terminationStep123) {
         return new JobBuilder("killDashNineJob", jobRepository)
                 .listener(systemTerminationListener(null))  // 파라미터는 런타임에 주입
-                .start(terminationStep)
+                .start(terminationStep123)
                 .build();
     }
 
     @Bean
-    public Step terminationStep(JobRepository jobRepository, PlatformTransactionManager transactionManager) {
-        return new StepBuilder("terminationStep", jobRepository)
+    public Step terminationStep123(JobRepository jobRepository, PlatformTransactionManager transactionManager) {
+        return new StepBuilder("terminationStep123", jobRepository)
                 .tasklet((contribution, chunkContext) -> {
                     log.info("시스템 제거 프로토콜 실행 중...");
                     return RepeatStatus.FINISHED;
